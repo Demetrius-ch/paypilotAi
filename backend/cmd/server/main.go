@@ -107,8 +107,8 @@ func main() {
 
 	// Start server
 	addr := fmt.Sprintf(":%d", cfg.Port)
-	log.Printf("🚀 PayPilot API starting on http://localhost%s", addr)
-	log.Printf("📝 Environment: %s", cfg.Env)
+	log.Printf(" PayPilot API starting on http://localhost%s", addr)
+	log.Printf(" Environment: %s", cfg.Env)
 
 	if err := http.ListenAndServe(addr, r); err != nil {
 		log.Fatalf("Server failed: %v", err)
